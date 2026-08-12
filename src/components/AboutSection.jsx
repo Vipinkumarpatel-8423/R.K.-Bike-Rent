@@ -19,7 +19,7 @@ export default function AboutSection() {
           <div className="relative aspect-[16/7] w-full min-h-[220px] sm:min-h-[300px] lg:min-h-[420px]">
 
             <Image
-              src="/images/about-team.jpg"
+              src="/images/about/team.png"
               alt="R.K. Bike Rent Team"
               fill
               priority
@@ -143,7 +143,7 @@ export default function AboutSection() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl">
 
               <Image
-                src="/images/about-bike.jpg"
+                src="/images/about/about.png"
                 alt="R.K. Bike Rent"
                 fill
                 className="object-cover transition duration-500 hover:scale-105"
@@ -183,7 +183,7 @@ export default function AboutSection() {
             <div className="relative aspect-[4/3] w-full overflow-hidden rounded-2xl sm:rounded-3xl">
 
               <Image
-                src="/images/mission.jpg"
+                src="/images/about/mission.png"
                 alt="R.K. Bike Rent Mission"
                 fill
                 className="object-cover transition duration-500 hover:scale-105"

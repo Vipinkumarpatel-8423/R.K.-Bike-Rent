@@ -36,13 +36,13 @@ export default function Hero() {
         <div className="max-w-3xl text-white">
 
           {/* Small Badge */}
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-yellow-300/50 bg-yellow-300/10 px-4 py-2 backdrop-blur-sm">
+          {/* <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-yellow-300/50 bg-yellow-300/10 px-4 py-2 backdrop-blur-sm">
             <span className="h-2 w-2 rounded-full bg-yellow-300" />
 
             <span className="text-xs font-bold uppercase tracking-[0.2em] text-yellow-200 sm:text-sm">
               R.K. Bike Rent
             </span>
-          </div>
+          </div> */}
 
           {/* Main Heading */}
           <h1 className="text-4xl font-black uppercase leading-[0.95] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl">

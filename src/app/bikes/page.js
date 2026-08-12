@@ -192,7 +192,7 @@ export default function BikesPage() {
 
 
       {/* ================= CTA ================= */}
-      <section className="w-full px-5 pb-16 sm:px-6 lg:px-8 lg:pb-20">
+      {/* <section className="w-full px-5 pb-16 sm:px-6 lg:px-8 lg:pb-20">
 
         <div className="relative mx-auto w-full max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-r from-cyan-600 to-cyan-700 px-6 py-10 sm:px-10 lg:px-14">
 
@@ -227,7 +227,7 @@ export default function BikesPage() {
 
         </div>
 
-      </section>
+      </section> */}
 
     </main>
   );
