@@ -84,8 +84,8 @@ export default function ContactPage() {
             <ContactCard
               icon={<Phone size={22} />}
               title="Call Us"
-              text="+91 7355088330"
-              href="tel:+917355088330"
+              text="+91 8360055932"
+              href="tel:+918360055932"
               color="cyan"
             />
 
@@ -93,7 +93,7 @@ export default function ContactPage() {
               icon={<MessageCircle size={22} />}
               title="WhatsApp"
               text="Chat with us"
-              href="https://wa.me/917355088330"
+              href="https://wa.me/918360055932"
               color="green"
             />
 
@@ -178,10 +178,10 @@ export default function ContactPage() {
                   </h3>
 
                   <a
-                    href="tel:+917355088330"
+                    href="tel:+918360055932"
                     className="mt-1 block break-all text-sm text-slate-400 transition hover:text-white"
                   >
-                    +91 7355088330
+                    +91 8360055932
                   </a>
 
                 </div>

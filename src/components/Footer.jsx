@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="relative mx-auto w-full max-w-7xl px-5 py-14 sm:px-6 sm:py-16 lg:px-8">
 
         {/* Top CTA */}
-        <div className="mb-12 flex flex-col gap-6 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
+        {/* <div className="mb-12 flex flex-col gap-6 overflow-hidden rounded-3xl border border-white/10 bg-white/[0.04] p-6 sm:p-8 lg:flex-row lg:items-center lg:justify-between">
 
           <div className="min-w-0 max-w-2xl">
 
@@ -52,7 +52,7 @@ export default function Footer() {
             </span>
           </Link>
 
-        </div>
+        </div> */}
 
         {/* Main Footer */}
         <div className="grid min-w-0 gap-10 sm:grid-cols-2 lg:grid-cols-[1.5fr_1fr_1fr_1.2fr] lg:gap-12">
@@ -236,7 +236,7 @@ export default function Footer() {
 
               {/* Phone */}
               <a
-                href="tel:+917355088330"
+                href="tel:+918360055932"
                 className="flex min-w-0 items-start gap-3 text-slate-400 transition hover:text-white"
               >
                 <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-cyan-500/10 text-cyan-400">
@@ -293,32 +293,7 @@ export default function Footer() {
         {/* Divider */}
         <div className="my-10 h-px w-full bg-white/10" />
 
-        {/* Bottom */}
-        {/* <div className="flex min-w-0 flex-col gap-4 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
 
-          <p className="break-words text-xs leading-5 text-slate-500 sm:text-sm">
-            © {new Date().getFullYear()} R.K. Bike Rent. All rights reserved.
-          </p>
-
-          <div className="flex flex-wrap items-center justify-center gap-x-5 gap-y-2 sm:justify-end">
-
-            <Link
-              href="/privacy-policy"
-              className="text-xs text-slate-500 transition hover:text-cyan-400 sm:text-sm"
-            >
-              Privacy Policy
-            </Link>
-
-            <Link
-              href="/terms"
-              className="text-xs text-slate-500 transition hover:text-cyan-400 sm:text-sm"
-            >
-              Terms & Conditions
-            </Link>
-
-          </div>
-
-        </div> */}
 
         <div className="flex min-w-0 flex-col gap-4 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
 

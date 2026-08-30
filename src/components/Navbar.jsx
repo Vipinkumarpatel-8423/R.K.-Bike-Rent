@@ -66,7 +66,7 @@ export default function Navbar() {
 
           {/* Call Button */}
           <a
-            href="tel:+917355088330"
+            href="tel:+918360055932"
             className="flex items-center gap-2 rounded-full border-2 border-white/70 bg-white/10 px-4 py-2.5 text-sm font-bold text-white backdrop-blur-sm transition hover:border-yellow-300 hover:bg-yellow-300 hover:text-blue-950"
           >
             <Phone size={16} />
@@ -133,7 +133,7 @@ export default function Navbar() {
 
             {/* Mobile Call */}
             <a
-              href="tel:+917355088330"
+              href="tel:+918360055932"
               className="flex items-center justify-center gap-2 rounded-full border-2 border-white/70 px-6 py-3 font-bold text-white transition hover:bg-white hover:text-blue-950"
             >
               <Phone size={17} />

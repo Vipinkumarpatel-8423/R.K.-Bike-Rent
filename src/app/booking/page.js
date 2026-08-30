@@ -10,28 +10,85 @@ import {
   User,
 } from "lucide-react";
 
-const bikes = [
-  {
-    id: "activa",
-    name: "Honda Activa 6G",
-    price: 499,
-  },
-  {
-    id: "shine",
-    name: "Honda Shine",
-    price: 599,
-  },
-  {
-    id: "classic",
-    name: "Royal Enfield Classic 350",
-    price: 899,
-  },
-  {
-    id: "mt15",
-    name: "Yamaha MT-15",
-    price: 999,
-  },
-];
+import bikes from "@/data/bikes";
+
+// const bikes = [
+//   {
+//     id: 3,
+//     name: "Super Meteor 650cc",
+//     price: 2500,
+//   },
+//   {
+//     id: 4,
+//     name: "Himalyan 450cc",
+//     price: 1800,
+//   },
+//   {
+//     id: 5,
+//     name: "Scram 440cc",
+//     price: 1500,
+//   },
+//   {
+//     id: 6,
+//     name: "Hunter 350",
+//     price: 1200,
+//   },
+//   {
+//     id: 7,
+//     name: "Himalyan 411 cc",
+//     price: 1400,
+//   },
+//   {
+//     id: 8,
+//     name: "Meteor 350cc",
+//     price: 1200,
+//   },
+//   {
+//     id: 9,
+//     name: "Bullet 350cc",
+//     price: 1200,
+//   },
+//   {
+//     id: 10,
+//     name: "X Pulse 210cc",
+//     price: 1300,
+//   },
+//   {
+//     id: 11,
+//     name: "Ktm duke 200cc",
+//     price: 1300,
+//   },
+//   {
+//     id: 12,
+//     name: "Jawa 350cc",
+//     price: 1300,
+//   },
+//   {
+//     id: 13,
+//     name: "Apache 160cc",
+//     price: 900,
+//   },
+//   {
+//     id: 14,
+//     name: "Avenger 220cc",
+//     price: 800,
+//   },
+//   {
+//     id: 15,
+//     name: "Ntorq 125cc",
+//     price: 700,
+//   },
+//   {
+//     id: 16,
+//     name: "Activa 5G",
+//     price: 500,
+//   },
+//   {
+//     id: 1,
+//     name: "Activa 6G",
+//     price: 600,
+//   },
+// ];
 
 export default function BookingPage() {
   const [formData, setFormData] = useState({
@@ -53,8 +110,12 @@ export default function BookingPage() {
     }));
   };
 
+  // const selectedBike = bikes.find(
+  //   (bike) => bike.id === formData.bike
+  // );
+
   const selectedBike = bikes.find(
-    (bike) => bike.id === formData.bike
+    (bike) => String(bike.id) === String(formData.bike)
   );
 
   const totalDays = useMemo(() => {

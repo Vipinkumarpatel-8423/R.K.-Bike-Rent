@@ -5,68 +5,7 @@ import Link from "next/link";
 import { Bike, CalendarDays, Gauge, Users } from "lucide-react";
 import { useState } from "react";
 
-const bikes = [
-  {
-    id: 1,
-    name: "Honda Activa 6G",
-    category: "Scooters",
-    image: "/images/bikes/activa.jpg",
-    price: "₹499",
-    type: "Scooter",
-    transmission: "Automatic",
-    seats: "2 Seater",
-  },
-  {
-    id: 2,
-    name: "Royal Enfield Classic 350",
-    category: "Cruiser",
-    image: "/images/bikes/classic-350.jpg",
-    price: "₹899",
-    type: "Cruiser",
-    transmission: "Manual",
-    seats: "2 Seater",
-  },
-  {
-    id: 3,
-    name: "Honda Shine",
-    category: "Bikes",
-    image: "/images/bikes/shine.jpg",
-    price: "₹599",
-    type: "Commuter",
-    transmission: "Manual",
-    seats: "2 Seater",
-  },
-  {
-    id: 4,
-    name: "Yamaha MT-15",
-    category: "Sports",
-    image: "/images/bikes/mt15.jpg",
-    price: "₹999",
-    type: "Sports",
-    transmission: "Manual",
-    seats: "2 Seater",
-  },
-  {
-    id: 5,
-    name: "TVS Jupiter",
-    category: "Scooters",
-    image: "/images/bikes/jupiter.jpg",
-    price: "₹499",
-    type: "Scooter",
-    transmission: "Automatic",
-    seats: "2 Seater",
-  },
-  {
-    id: 6,
-    name: "Royal Enfield Hunter 350",
-    category: "Cruiser",
-    image: "/images/bikes/hunter-350.jpg",
-    price: "₹849",
-    type: "Cruiser",
-    transmission: "Manual",
-    seats: "2 Seater",
-  },
-];
+import bikes from "@/data/bikes";
 
 const categories = [
   "All",
@@ -191,43 +130,6 @@ export default function BikesPage() {
       </section>
 
 
-      {/* ================= CTA ================= */}
-      {/* <section className="w-full px-5 pb-16 sm:px-6 lg:px-8 lg:pb-20">
-
-        <div className="relative mx-auto w-full max-w-7xl overflow-hidden rounded-3xl bg-gradient-to-r from-cyan-600 to-cyan-700 px-6 py-10 sm:px-10 lg:px-14">
-
-          <div className="pointer-events-none absolute -right-20 -top-20 h-60 w-60 rounded-full bg-white/10 blur-2xl" />
-
-          <div className="relative flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-
-            <div className="min-w-0">
-
-              <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-cyan-100">
-                Ready to Ride?
-              </p>
-
-              <h2 className="mt-2 break-words text-2xl font-black text-white sm:text-3xl">
-                Your next adventure starts here.
-              </h2>
-
-              <p className="mt-2 max-w-xl text-sm leading-6 text-cyan-100">
-                Pick your bike and book your ride today.
-              </p>
-
-            </div>
-
-            <Link
-              href="/booking"
-              className="inline-flex w-fit shrink-0 rounded-full bg-orange-500 px-7 py-3.5 text-sm font-extrabold text-white shadow-lg transition hover:bg-orange-600"
-            >
-              Book Your Ride
-            </Link>
-
-          </div>
-
-        </div>
-
-      </section> */}
 
     </main>
   );

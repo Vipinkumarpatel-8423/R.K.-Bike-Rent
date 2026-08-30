@@ -18,6 +18,7 @@ export const metadata = {
   description:
     "Rent bikes easily with R.K. Bike Rent. Affordable, reliable and convenient bike rental service.",
 };
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function RootLayout({ children }) {
   return (
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-screen bg-white text-black">
         <Navbar />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>
