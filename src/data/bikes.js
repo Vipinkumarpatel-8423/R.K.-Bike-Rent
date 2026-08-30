@@ -158,10 +158,10 @@ const bikes = [
   {
     id: 14,
     name: "Avenger 220cc",
-    category: "Sports",
+    category: "bike",
     image: "/images/bikes/Avenger 220cc.jpg",
     price: 800,
-    type: "Sports",
+    type: "bike",
     transmission: "Manual",
     seats: "2 Seater",
     fuel: "Petrol",

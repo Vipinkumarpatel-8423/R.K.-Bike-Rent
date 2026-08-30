@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu, Phone, X } from "lucide-react";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,13 +13,13 @@ export default function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 md:px-8">
 
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-3">
-          {/* RK Logo */}
+        {/* <Link href="/" className="flex items-center gap-3">
+         
           <div className="flex h-12 w-12 items-center justify-center rounded-full border-2 border-yellow-300 bg-yellow-300 text-xl font-extrabold text-blue-950 shadow-sm">
             RK
           </div>
 
-          {/* Brand Name */}
+         
           <div>
             <h1 className="text-lg font-extrabold leading-none tracking-tight text-white md:text-xl">
               R.K. BIKE RENT
@@ -28,7 +29,32 @@ export default function Navbar() {
               Ride • Explore • Repeat
             </p>
           </div>
-        </Link>
+        </Link> */}
+
+        <Link href="/" className="flex items-center gap-3">
+  {/* Logo */}
+  <div className="relative h-14 w-14 md:h-16 md:w-16 overflow-hidden rounded-full bg-white">
+    <Image
+      src="/images/Logo/Logo.jpg"
+      alt="R.K. Bike Rent Logo"
+      fill
+      priority
+      className="object-contain"
+      sizes="48px"
+    />
+  </div>
+
+  {/* Brand Name */}
+  {/* <div>
+    <h1 className="text-lg font-extrabold leading-none tracking-tight text-white md:text-xl">
+      R.K. BIKE RENT
+    </h1>
+
+    <p className="mt-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-yellow-200">
+      Ride • Explore • Repeat
+    </p>
+  </div> */}
+</Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden items-center gap-8 md:flex">

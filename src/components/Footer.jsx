@@ -9,6 +9,8 @@ import { IoMdMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 
+import Image from "next/image";
+
 export default function Footer() {
   return (
     <footer className="relative w-full overflow-hidden bg-slate-950 text-white">
@@ -60,7 +62,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="min-w-0">
 
-            <Link
+            {/* <Link
               href="/"
               className="inline-flex items-center gap-3"
             >
@@ -79,7 +81,33 @@ export default function Footer() {
                 </p>
               </div>
 
-            </Link>
+            </Link> */}
+
+              <Link href="/" className="flex items-center gap-3">
+  {/* Logo */}
+  <div className="relative h-14 w-14 md:h-16 md:w-16 overflow-hidden rounded-full bg-white">
+    <Image
+      src="/images/Logo/Logo.jpg"
+      alt="R.K. Bike Rent Logo"
+      fill
+      priority
+      className="object-contain"
+      sizes="48px"
+    />
+  </div>
+
+  {/* Brand Name */}
+  <div>
+    <h1 className="text-lg font-extrabold leading-none tracking-tight text-white md:text-xl">
+      R.K. BIKE RENT
+    </h1>
+
+    <p className="mt-1 text-[9px] font-semibold uppercase tracking-[0.18em] text-yellow-200">
+      Ride • Explore • Repeat
+    </p>
+  </div>
+</Link>
+
 
             <p className="mt-5 max-w-sm text-sm leading-7 text-slate-400">
               Affordable and reliable bike rentals for city rides,
